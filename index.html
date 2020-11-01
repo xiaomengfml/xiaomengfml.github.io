@@ -1,359 +1,186 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-
-  
-  <title>XiaoMeng</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小梦(XiaoMeng)的博客">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>XiaoMeng - 小梦的博客</title><meta name="keywords" content="Xiaomeng, 小梦"><meta name="author" content="XiaoMeng"><meta name="copyright" content="XiaoMeng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="小梦(XiaoMeng)的博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="XiaoMeng">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="XiaoMeng">
 <meta property="og:description" content="小梦(XiaoMeng)的博客">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/null">
 <meta property="article:author" content="XiaoMeng">
 <meta property="article:tag" content="Xiaomeng, 小梦">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="XiaoMeng" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<meta name="twitter:image" content="http://example.com/null"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">XiaoMeng</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-vs-code" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/11/01/vs-code/" class="article-date">
-  <time datetime="2020-11-01T04:06:01.000Z" itemprop="datePublished">2020-11-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/01/vs-code/">vs code</a>
-    </h1>
-  
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="VS-Code-C-C-、GitHub、Typora"><a href="#VS-Code-C-C-、GitHub、Typora" class="headerlink" title="VS Code C/C++、GitHub、Typora"></a>VS Code C/C++、GitHub、Typora</h1><p>[TOC]</p>
-<p>==请安装 <a target="_blank" rel="noopener" href="https://typora.io/">Typora</a> 阅读本文档==</p>
-<p>==仅供个人参考，不保证准确性和安全性，有问题请课后与我交流， 请勿挂网==</p>
-<p>==cnchen2000@MCS.WTU==</p>
-<p>==2020.09.06 version 0.1==</p>
-<h2 id="1-VS-Code-C-C-编程环境安装"><a href="#1-VS-Code-C-C-编程环境安装" class="headerlink" title="1 VS Code C/C++ 编程环境安装"></a>1 VS Code C/C++ 编程环境安装</h2><h3 id="1-1-VS-Code-安装"><a href="#1-1-VS-Code-安装" class="headerlink" title="1.1 VS Code 安装"></a>1.1 VS Code 安装</h3><p>​    VS Code 是目前最流行的轻量级编程开发工具，学会恰当使用可以使编程变得高效而有趣。</p>
-<h4 id="1-1-1-VS-Code-下载"><a href="#1-1-1-VS-Code-下载" class="headerlink" title="1.1.1  VS Code 下载"></a>1.1.1  VS Code 下载</h4><p>​    网上搜索 VS Code 关键字 进入 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code 主页</a>， 点击蓝色 右上角 <strong>Download</strong> 按钮，进入 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/Download">下载页面</a> 选择 <strong>System Installer</strong> <strong>64 bit</strong> 下载，下载完成后打开安装包进行安装。</p>
-   <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905090212661.png" alt="image-20200905090212661" style="zoom: 80%;" />
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
 
-<p>   一路 <strong>下一步</strong>  完成安装，可以修改安装路径，添加桌面快捷方式。</p>
-<p><img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/hero.png" alt="code basics hero"></p>
-<h4 id="1-1-2-常用插件安装"><a href="#1-1-2-常用插件安装" class="headerlink" title="1.1.2 常用插件安装"></a>1.1.2 常用插件安装</h4><p>​    活动栏 (A区域) 打开扩展，搜索插件关键字安装</p>
-<table>
-<thead>
-<tr>
-<th>必装插件</th>
-<th>其他插件</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>中文语言包  <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905095311237.png" alt="image-20200905095311237" style="zoom:25%;" /></td>
-<td>Atom 外观  <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905101436835.png" alt="image-20200905101436835" style="zoom:25%;" /></td>
-</tr>
-<tr>
-<td>C/C++ 插件  <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905095433996.png" alt="image-20200905095433996" style="zoom:25%;" /></td>
-<td>多彩括号     <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905102742533.png" alt="image-20200905102742533" style="zoom:25%;" /></td>
-</tr>
-<tr>
-<td></td>
-<td>七彩边框     <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905103436251.png" alt="image-20200905103436251" style="zoom:25%;" /></td>
-</tr>
-<tr>
-<td></td>
-<td>…</td>
-</tr>
-</tbody></table>
-<p>​    使用 按快捷键 <strong>F1</strong> 调出命令面板，输入命令关键字调整。 例如，输入 language 选择 Configurate Display Language 进行语言显示选择</p>
-<h3 id="1-2-C-C-环境搭建"><a href="#1-2-C-C-环境搭建" class="headerlink" title="1.2 C/C++环境搭建"></a>1.2 C/C++环境搭建</h3><h4 id="1-2-1-gcc编译器安装"><a href="#1-2-1-gcc编译器安装" class="headerlink" title="1.2.1 gcc编译器安装"></a>1.2.1 gcc编译器安装</h4><p>方式一（推荐）：<a target="_blank" rel="noopener" href="http://wangshuo.jb51.net:81/201910/tools/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z">离线安装包</a> 直接解压，解压工具  <a target="_blank" rel="noopener" href="https://www.7-zip.org/a/7z1900-x64.exe">7zip</a> ，将mingw64文件夹放在C盘根目录下。</p>
-<p>方式二： 安装 <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download">Ming w-w64</a> 。 Architecture 选择 x86_64, 在线下载安装 。</p>
-<p>​    <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905104558056.png" alt="image-20200905104558056" style="zoom: 80%;" /></p>
-<p>​    </p>
-<p>​    安装完成后，添加系统变量。首先找到mingw64文件夹，然后将子文件夹bin的路径，比如 C:\mingw64\bin 添加到系统变量，告诉系统我们要用的 <strong>gcc.exe</strong> 在路径bin下。</p>
-<p>​    我的电脑<img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905152923918.png" alt="image-20200905152923918">点右键 弹出 <strong>系统</strong> 界面 <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905153021713.png" alt="image-20200905153021713"></p>
-<p>点开 <strong>高级系统设置</strong> <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905153129713.png" alt="image-20200905153129713"  /> 选择 <strong>环境变量</strong>，<img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905153303658.png" alt="image-20200905153303658" style="zoom: 80%;" /> <strong>系统变量 **选择 **Path</strong>，点 <strong>编辑</strong></p>
-<p>空白行处点击，添加刚才 bin 的路径，比如 C:\mingw64\bin <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905153616385.png" alt="image-20200905153616385">    保存。</p>
-<p>gcc 配置完成。</p>
-<p>以后添加系统变量都是这一个过程。</p>
-<h4 id="1-2-2-hello-c-hello-cpp-程序运行示例"><a href="#1-2-2-hello-c-hello-cpp-程序运行示例" class="headerlink" title="1.2.2 hello.c (hello.cpp) 程序运行示例"></a>1.2.2 hello.c (hello.cpp) 程序运行示例</h4><p>用 VS Code 打开一个文件夹， <strong>资源管理器</strong> 中 点击 <strong>新建文件</strong> <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905174815514.png" alt="新建文件" style="zoom:50%;" />  按钮，命名 hello.c </p>
-<p><strong>编程</strong> hello.c </p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello, world!\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    retun <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2020-11-01 20:33:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-<ul>
-<li><p><strong>编译</strong>   打开 <strong>终端</strong> 菜单，选择 <strong>配置默认生成任务</strong>，    <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905194526343.png" alt="image-20200905194526343" style="zoom:50%;" />  选择 <strong>c/c++: gcc.exe…</strong> <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200905194917797.png" alt="image-20200905194917797"> 自动生成 tasks.json 配置文件。</p>
-</li>
-<li><p><strong>调试运行</strong> 打开 <strong>运行</strong> 菜单， 选择 <strong>添加配置</strong>， <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906094714651.png" alt="image-20200906094714651" style="zoom:50%;" /> 选择 <strong>C++(GDB/LLDB)</strong> 调试器，  <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906095036477.png" alt="image-20200906095036477">   选择上面的 gcc 编译配置 <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906095427565.png" alt="image-20200906095427565"  />自动生成 launch.json 配置文件。 调试运行结果在 <strong>终端</strong>  <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906101242272.png" alt="image-20200906101242272" style="zoom:50%;" /></p>
-</li>
-</ul>
-<hr>
-<p> <strong>编程</strong> hello.cpp </p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">XiaoMeng</a></span><span id="menus"><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">XiaoMeng</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/11/01/vs-code/" title="vs code">vs code</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-01T04:06:01.000Z" title="发表于 2020-11-01 12:06:01">2020-11-01</time></span></div><div class="content">VS Code C/C++、GitHub、Typora[TOC]
+==请安装 Typora 阅读本文档==
+==仅供个人参考，不保证准确性和安全性，有问题请课后与我交流， 请勿挂网==
+==cnchen2000@MCS.WTU==
+==2020.09.06 version 0.1==
+1 VS Code C/C++ 编程环境安装1.1 VS Code 安装​    VS Code 是目前最流行的轻量级编程开发工具，学会恰当使用可以使编程变得高效而有趣。
+1.1.1  VS Code 下载​    网上搜索 VS Code 关键字 进入 VS Code 主页， 点击蓝色 右上角 Download 按钮，进入 下载页面 选择 System Installer 64 bit 下载，下载完成后打开安装包进行安装。
+   
 
-<p>​    调试运行过程与上面  C 程序 类似， 首先 删除 配置文件夹 .vscode， 重新生成 g++ 编译配置文件和相应运行配置文件。</p>
-<h4 id="1-2-3-打开-自动保存"><a href="#1-2-3-打开-自动保存" class="headerlink" title="1.2.3 打开 自动保存"></a>1.2.3 打开 自动保存</h4><p>​    避免每次手动保存，可以打开自动保存，在 **文件 **菜单下 <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906162049406.png" alt="image-20200906162049406"> 每秒自动保存。</p>
-<h2 id="2-Github-托管代码"><a href="#2-Github-托管代码" class="headerlink" title="2 Github 托管代码"></a>2 Github 托管代码</h2><p>​    Github 是目前最流行的代码协作平台，也是优秀代码开源平台。学会用好Github</p>
-<p>2.1 注册</p>
-<p>​    打开 <a target="_blank" rel="noopener" href="https://github.com/">Github主页</a>，注册过程非常简便，自己操作试试。<img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906103020502.png" alt="image-20200906103020502"  /> </p>
-<p>​    Github 使用 <strong>存储库</strong>(或者称为仓库 repository ) 管理 项目，项目里面存放代码及项目相关文档。 点击左上角 logo 显示 存储库列表， 新建 存储库 点击 <strong>new</strong> 按钮 </p>
-<p><img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906103727077.png" alt="image-20200906103727077"  />     f’f’f’f’f’f’f’f’f’f’f’f’f’f’f’f’f’f’f</p>
-<p>新建存储库 repository，首先是 <strong>存储库名称</strong> Repository name 必填， 描述 Description 选填， 存储库类型 <strong>公开</strong> Public  还是 <strong>私有</strong> Private 选择，初始化存储库可以 勾选 <strong>添加 readme 文件</strong> Add a README file 。点击 <strong>create repository</strong> 按钮 完成 创建。完成后就可以使用存储库管理自己的代码和文档了。</p>
-<p><img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906104028615.png" alt="image-20200906104028615"></p>
-<h3 id="2-2-VS-code-使用-Github"><a href="#2-2-VS-code-使用-Github" class="headerlink" title="2.2 VS code 使用 Github"></a>2.2 VS code 使用 Github</h3><h4 id="2-2-1-Git-安装"><a href="#2-2-1-Git-安装" class="headerlink" title="2.2.1 Git 安装"></a>2.2.1 Git 安装</h4><p>​    安装 <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a> ，一路 next 。 </p>
-<h4 id="2-2-2-克隆存储库到本地"><a href="#2-2-2-克隆存储库到本地" class="headerlink" title="2.2.2 克隆存储库到本地"></a>2.2.2 克隆存储库到本地</h4><p>进入创建的存储库，点开 <strong>code</strong> 按钮 ，点击 复制图标，复制 存储库 <strong>网址</strong> URL   <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906114146909.png" alt="image-20200906114146909"> </p>
-<p>打开 VS Code，按 F1 调出 命令面板 ，输入  <strong>clone</strong> <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906150446593.png" alt="image-20200906150446593"> ， <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906150556919.png" alt="image-20200906150556919">  ctrl + V 复制刚才的网址，</p>
-<p>选择 存储库 本地存储位置 <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906150945789.png" alt="image-20200906150945789">  </p>
-<p>下载完成点击打开 <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906154436893.png" alt="image-20200906154436893"  /></p>
-<h4 id="2-2-3-上传修改到Github"><a href="#2-2-3-上传修改到Github" class="headerlink" title="2.2.3 上传修改到Github"></a>2.2.3 上传修改到Github</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph LR;</span><br><span class="line">    暂存--&gt;提交 --&gt; 推送</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+   一路 下一步  完成安装，可以修改安装路径，添加桌面快捷方式。
+
+1.1.2 常用插件安装​    活动栏 (A区域) 打开扩展，搜索插件关键字安装
 
 
 
-<p>点击图标 <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906154825719.png" alt="image-20200906154825719"> 打开 <strong>源代码管理</strong> ,  首先是点击 <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906160757703.png" alt="image-20200906160757703">  <strong>暂存</strong> 更改过的文件，然后是点击 <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906160910681.png" alt="image-20200906160910681"> <strong>提交</strong> 暂存 到本地 Git，<img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906161557398.png" alt="image-20200906161557398">输入提交消息 或者输入空格，再回车， 最后 <strong>推送</strong> 到Github， 需要时输入Github账号信息。</p>
-<h4 id="2-2-4-github账号保存"><a href="#2-2-4-github账号保存" class="headerlink" title="2.2.4 github账号保存"></a>2.2.4 github账号保存</h4><p>If you clone GitHub repositories using SSH, then you authenticate using SSH keys instead of a username and password. For help setting up an SSH connection, see Generating an SSH Key.<br>Tip: You need Git 1.7.10 or newer to use the credential helper.<br>You can also install a native Git shell, such as Git for Windows. With Git for Windows, running the following in the command line will store your credentials:<br>$ git config –global credential.helper wincred</p>
-<h2 id="3-Typora-课堂笔记和程序文档书写"><a href="#3-Typora-课堂笔记和程序文档书写" class="headerlink" title="3 Typora 课堂笔记和程序文档书写"></a>3 Typora 课堂笔记和程序文档书写</h2><p>​    markdown 简洁语法使其成为文档，特别是程序文档的书写语法。typora 是方便的 markdown 书写工具。</p>
-<h3 id="3-1-Typora-安装"><a href="#3-1-Typora-安装" class="headerlink" title="3.1 Typora 安装"></a>3.1 Typora 安装</h3><p>​    <a target="_blank" rel="noopener" href="https://typora.io/">Typora</a> 进入主页下载安装，愉快体验书写的乐趣吧 :smile:</p>
-<p>​    本说明文档用  ==Typora==  完成:astonished:</p>
-<p>​    <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906164020014.png" alt="image-20200906164020014"></p>
-<h3 id="3-2-VS-Code-对markdown-支持"><a href="#3-2-VS-Code-对markdown-支持" class="headerlink" title="3.2 VS Code 对markdown 支持"></a>3.2 VS Code 对markdown 支持</h3><p>​    VS code 原生支持 markdown，可以预览，编辑。建议 VS Code 编写代码， 配合 Typora 写笔记和文档。</p>
-<p>​    右键点击 .md 文档，选择 <strong>在资源管理器中显示</strong> <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906164853359.png"> 再用Typora 打开编辑。</p>
-<h3 id="3-3-图床设置"><a href="#3-3-图床设置" class="headerlink" title="3.3 图床设置"></a>3.3 图床设置</h3><h4 id="3-3-1-Typora-PicGo"><a href="#3-3-1-Typora-PicGo" class="headerlink" title="3.3.1 Typora + PicGo"></a>3.3.1 Typora + PicGo</h4><p>图在 markdown 中是通过链接访问实现的，因此如果想要放置图片供别人访问的话，需要提供公网图片方法连接。</p>
-<p>​    typora 设置图片在 <strong>文件</strong> 菜单中的 <strong>偏好设置</strong> <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906193428130.png" alt="image-20200906193428130"> 图像 选项卡</p>
-<p>安装 <strong>PicGo(app)</strong> 设置好程序安装路径 </p>
-<p><img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906193614875.png" alt="image-20200906193614875"></p>
-<h4 id="3-3-2-PicGo-Github"><a href="#3-3-2-PicGo-Github" class="headerlink" title="3.3.2 PicGo + Github"></a>3.3.2 PicGo + Github</h4><p>picGo 中可选图床比较多， 以 Github 为例</p>
-<ol>
-<li>新建一个公开的存储库用于存放图片</li>
-<li>点击右上角个人菜单，选中 <strong>settings</strong>  <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906194108996.png" alt="image-20200906194108996"> </li>
-<li>弹出的页面 选中左下方 <strong>Developer settings</strong>  <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906194328454.png" alt="image-20200906194328454"> </li>
-<li>弹出的页面，选中左下方 <strong>Personal access tokens</strong> <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906194404598.png" alt="image-20200906194404598"></li>
-<li>点击 <strong>Generate new token</strong><img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906194540645.png" alt="image-20200906194540645"></li>
-<li>勾选 repo，输入 Note 内容<img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906194715247.png" alt="image-20200906194715247"></li>
-<li>保存好 token  <img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906200828253.png" alt="image-20200906200828253"></li>
-<li>PicGo 中设置 仓库名: 用户名/存储库名, 设定分支名: master, 设定Token: 复制刚才保存的Token, 指定存储路径: img/，设定自定义域名: 不填</li>
-</ol>
-<p><img src="https://cnchen2000.oss-cn-shanghai.aliyuncs.com/img/image-20200906201217107.png" alt="image-20200906201217107"></p>
-<p>图片上传成功，图片显示可能会因为网站访问出错而显示失败，可以尝试其他国内图床。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/01/vs-code/" data-id="ckgyofvji00007gvi5qck0tuh" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/code/" rel="tag">code</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vs/" rel="tag">vs</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/11/01/hello-world/" class="article-date">
-  <time datetime="2020-11-01T03:40:10.285Z" itemprop="datePublished">2020-11-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/01/hello-world/" data-id="ckgyoc25z00004kvieh0m8883" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/code/" rel="tag">code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vs/" rel="tag">vs</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/code/" style="font-size: 10px;">code</a> <a href="/tags/vs/" style="font-size: 10px;">vs</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/11/01/vs-code/">vs code</a>
-          </li>
-        
-          <li>
-            <a href="/2020/11/01/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 XiaoMeng<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+必装插件
+其他插件
 
 
 
-
-<script src="/js/script.js"></script>
-
-
+中文语言包  
+Atom 外观  
 
 
-  </div>
-</body>
-</html>
+C/C++ 插件  
+多彩括号     
+
+
+ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/11/01/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-01T03:40:10.285Z" title="发表于 2020-11-01 11:40:10">2020-11-01</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server1$ hexo server
+
+More info: Server
+Generate static files1$ hexo generate
+
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">XiaoMeng</div><div class="author-info__description">小梦(XiaoMeng)的博客</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2020/11/01/vs-code/" title="vs code">vs code</a><time datetime="2020-11-01T04:06:01.000Z" title="发表于 2020-11-01 12:06:01">2020-11-01</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2020/11/01/hello-world/" title="Hello World">Hello World</a><time datetime="2020-11-01T03:40:10.285Z" title="发表于 2020-11-01 11:40:10">2020-11-01</time></div></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/code/" style="font-size: 1.1em; color: #999">code</a> <a href="/tags/vs/" style="font-size: 1.1em; color: #999">vs</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">2</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">2</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-11-01T12:33:34.243Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By XiaoMeng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
